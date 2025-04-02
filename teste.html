@@ -11,3 +11,275 @@
     </div>
 </body>
 </html>
+
+//
+<<!-- mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ git init
+Initialized empty Git repository in C:/Users/mathi/OneDrive/Área de Trabalho/Projeto 1 - dev/.git/
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        codigo.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ git add "codigo.txt"
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ git add .
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   codigo.txt
+        new file:   style.css
+        new file:   teste.html
+
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ git commit -m "commit inicial"
+[master (root-commit) 85bea11] commit inicial
+ 3 files changed, 12 insertions(+)
+ create mode 100644 codigo.txt
+ create mode 100644 style.css
+ create mode 100644 teste.html
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ git remote add origin https://github.com/teteu1n/projeto1-matheus-dev
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ ^C
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ git push --set-upstream origin master
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 481 bytes | 481.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/teteu1n/projeto1-matheus-dev/pull/new/master
+remote:
+To https://github.com/teteu1n/projeto1-matheus-dev
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   codigo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   codigo.txt
+        modified:   teste.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ git add .
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ git commit -m "permitir cadastro de usuarios"
+[master 1d58e33] permitir cadastro de usuarios
+ 2 files changed, 5 insertions(+), 2 deletions(-)
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ git pusg
+git: 'pusg' is not a git command. See 'git --help'.
+
+The most similar command is
+        push
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 463 bytes | 463.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/teteu1n/projeto1-matheus-dev
+   85bea11..1d58e33  master -> master
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ gir reflog
+bash: gir: command not found
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ git reflog
+1d58e33 (HEAD -> master, origin/master) HEAD@{0}: commit: permitir cadastro de usuarios
+85bea11 HEAD@{1}: commit (initial): commit inicial
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ ^C
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ ^C
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ git reset --hard 85bea11
+HEAD is now at 85bea11 commit inicial
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ git reflog
+85bea11 (HEAD -> master) HEAD@{0}: reset: moving to 85bea11
+1d58e33 (origin/master) HEAD@{1}: commit: permitir cadastro de usuarios
+85bea11 (HEAD -> master) HEAD@{2}: commit (initial): commit inicial
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ git reset --hard 1d58e33
+HEAD is now at 1d58e33 permitir cadastro de usuarios
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ git branch
+* master
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ git branch staging
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ git branch\
+> git branch
+git: 'branchgit' is not a git command. See 'git --help'.
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ git branch
+* master
+  staging
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ git checkout staging
+Switched to branch 'staging'
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (staging)
+$ git branch
+  master
+* staging
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (staging)
+$ git status
+On branch staging
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   teste.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (staging)
+$ git add .
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (staging)
+$ git commit -m "adicionando nome completo"
+[staging 7c8ee0b] adicionando nome completo
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (staging)
+$ git push
+fatal: The current branch staging has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin staging
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (staging)
+$ git push --set-upstream origin staging
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 305 bytes | 305.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'staging' on GitHub by visiting:
+remote:      https://github.com/teteu1n/projeto1-matheus-dev/pull/new/staging
+remote:
+To https://github.com/teteu1n/projeto1-matheus-dev
+ * [new branch]      staging -> staging
+branch 'staging' set up to track 'origin/staging'.
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (staging)
+$ git branch
+  master
+* staging
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (staging)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ git merge staging
+Updating 1d58e33..7c8ee0b
+Fast-forward
+ teste.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/teteu1n/projeto1-matheus-dev
+   1d58e33..7c8ee0b  master -> master
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$ ^C
+
+mathi@PCDOTETEU MINGW64 ~/OneDrive/Área de Trabalho/Projeto 1 - dev (master)
+$
